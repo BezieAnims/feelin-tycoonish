@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://db1u8s1mpmh25"]
+[gd_scene load_steps=5 format=3 uid="uid://db1u8s1mpmh25"]
 
 [ext_resource type="PackedScene" uid="uid://bdukqnlgcdg3b" path="res://map/map.tscn" id="1_1bvp3"]
 [ext_resource type="PackedScene" uid="uid://bscqrhas5tiqu" path="res://global_assets/player/player.tscn" id="1_h2yge"]
 [ext_resource type="PackedScene" uid="uid://vtpd4rhriseg" path="res://ui/ui.tscn" id="3_h2yge"]
+[ext_resource type="Texture2D" uid="uid://ftdiumcxmvs4" path="res://map/start/casino/Goose.png" id="4_1bvp3"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -13,3 +14,8 @@ position = Vector2(1, 0)
 position = Vector2(685, 453)
 
 [node name="UI" parent="." instance=ExtResource("3_h2yge")]
+
+[node name="Goose" type="Sprite2D" parent="."]
+position = Vector2(-1588, 529)
+scale = Vector2(0.833782, 0.867)
+texture = ExtResource("4_1bvp3")
